@@ -1,0 +1,41 @@
+easy_admin:
+  design:
+    menu:
+      - { route: 'admin_dashboard', label: 'Dashboard', icon: 'fa fa-home' }
+  entities:
+    Blog:
+      class: App\Entity\Blog
+      label: 'Blog'
+      list:
+        fields:
+          - title
+          - author
+          - createdAt
+        actions:
+          - { name: 'show', label: 'Voir' }
+          - { name: 'edit', label: 'Modifier' }
+          - { name: 'delete', label: 'Supprimer' }
+    User:
+      class: App\Entity\User
+      label: 'Utilisateurs'
+      list:
+        fields:
+          - username
+          - email
+          - createdAt
+        actions:
+          - { name: 'show', label: 'Voir' }
+          - { name: 'edit', label: 'Modifier' }
+          - { name: 'delete', label: 'Supprimer' }
+    Comment:
+      class: App\Entity\Comment
+      label: 'Commentaires'
+      list:
+        fields:
+          - content
+          - author
+          - createdAt
+        actions:
+          - { name: 'show', label: 'Voir' }
+          - { name: 'edit', label: 'Modifier' }
+          - { name: 'delete', label: 'Supprimer' }

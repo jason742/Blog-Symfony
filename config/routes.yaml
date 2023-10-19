@@ -1,0 +1,9 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+
+dashboard:
+    path: /admin
+    controller: ../src/Controller/Admin/BlogDashBoardController.php::index
+
